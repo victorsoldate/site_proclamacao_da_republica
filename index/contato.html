@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+    <header id="header"> <!-- <header> funciona como uma <div>, mas com propósito semântico de identificar um cabeçalho -->
+        <nav class="nav01"> <!-- <nav> é usado para identificar um menu de navegação-->
+            <ul> <!-- <ul> é usado como uma lista de itens -->
+                <li><a href="inicio.html">Início</a></li> <!-- <li> é usado para itens da lista-->
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html" class="nav01 selecionado">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="divmaior">
+            <div class="conteudo">
+                <form method="post" action="mailto:email@email.com">
+                    <fieldset>
+                        <div class="fieldset-interno">
+                        <p>Sugestões? Dúvidas? Informações adicionais?</p>
+                        <p>Entre em contato conosco!</p>
+                        <textarea class="caixa-de-texto" name="feedback" rows="10" cols="40"></textarea>
+                        <p><label for="iEmail">E-mail para contato:</label></p>
+                        <input class="caixa-de-texto" type="email" name="tEmail" id="iEmail" size="37" placeholder="E-mail">
+                        </div>
+                    </fieldset>
+                    <br>
+                    <center>
+                        <input class="submit-reset" type="submit" value="Enviar">
+                        <input class="submit-reset" type="reset" value="Limpar">
+                    </center>
+                </form>
+            </div>
+        </div>
+        <div class="divmaior">
+            <div class="conteudo">
+
+                    <p>Entre em contato pelas nossas redes sociais!</p><br>
+                    <div class="nav01">
+                        <a href="https://wa.me/999999999" target="_blank" class="redes-sociais">
+                        <p class="fab fa-whatsapp"></p>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="redes-sociais">
+                        <p class="fab fa-facebook"></p>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="redes-sociais">
+                        <p class="fab fa-instagram"></p>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Alunos: Víctor Soldate Duarte e Yago Alves Maciel
+    </footer>
+</body>
+</html>
+
+
+
